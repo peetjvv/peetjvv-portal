@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+@import './vars.json';
+@import './setup.scss';
+
+#app {
+  width: 100vw;
+  height: 100vh;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 4rem;
+
+    .intro-container {
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
+    .bottom-part {
+      display: flex;
+      align-items: flex-start;
+
+      .image-wrapper {
+        margin-right: 2rem;
+
+        img {
+          height: 200px;
+        }
+      }
+
+      .links-container {
+        flex-grow: 1;
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        ul {
+          a {
+            font-size: 1.5rem;
+
+            svg {
+              padding-right: 0.5rem;
+            }
+          }
+        }
+
+        .social-links {
+          display: flex;
+          justify-content: flex-end;
+          font-size: 2.5rem;
+
+          a:not(:last-child) {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
