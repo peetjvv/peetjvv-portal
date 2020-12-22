@@ -1,6 +1,9 @@
 {
   "allow-dark-mode": true,
-  "top-panel-height": 200,
+
+  "breakpoint-tablet": "1023px",
+  "breakpoint-mobile": "767px",
+
   "pt-black": "#141414",
   "pt-blue": "#1A79BC"
 }

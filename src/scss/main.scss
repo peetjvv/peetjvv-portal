@@ -9,9 +9,11 @@
   .content {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     padding-top: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 
     .intro-container {
       p {
@@ -24,10 +26,11 @@
       align-items: flex-start;
 
       .image-wrapper {
+        height: 200px;
         margin-right: 2rem;
 
         img {
-          height: 200px;
+          height: inherit;
         }
       }
 
@@ -56,6 +59,31 @@
           a:not(:last-child) {
             margin-right: 8px;
           }
+        }
+      }
+    }
+  }
+}
+
+// tablet
+@media screen and (min-width: $breakpoint-mobile + 1px) and (max-width: $breakpoint-tablet) {
+}
+
+// mobile
+@media screen and (max-width: $breakpoint-mobile) {
+  #app {
+    .content {
+      .intro-container {
+        h1 {
+          text-align: center;
+        }
+      }
+      .bottom-part {
+        flex-direction: column;
+        align-items: center;
+
+        .image-wrapper {
+          margin-right: unset;
         }
       }
     }

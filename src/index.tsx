@@ -40,6 +40,9 @@ const App: React.FC<{}> = () => {
             <a href="https://www.github.com/peetjvv">
               <FontAwesomeIcon icon={FaBrandIcons.faGithub} />
             </a>
+            <a href="https://www.linkedin.com/in/peetjvv/">
+              <FontAwesomeIcon icon={FaBrandIcons.faLinkedin} />
+            </a>
             {/* <a href="https://www.twitch.tv/peetjvv">
               <FontAwesomeIcon icon={FaBrandIcons.faTwitch} />
             </a>

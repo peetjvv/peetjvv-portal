@@ -5,7 +5,7 @@
   "main": "index.tsx",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --env.production"
+    "build": "webpack"
   },
   "author": "Peet Janse van Vuuren",
   "license": "MIT",
