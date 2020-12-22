@@ -5,7 +5,9 @@
   "main": "index.tsx",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack"
+    "clean": "rimraf build",
+    "build": "npm run clean && webpack",
+    "deploy": "npm run build && firebase deploy"
   },
   "author": "Peet Janse van Vuuren",
   "license": "MIT",
@@ -35,6 +37,7 @@
     "json-loader": "^0.5.7",
     "modernizr-loader": "^1.0.1",
     "node-sass-json-importer": "^4.3.0",
+    "rimraf": "^3.0.2",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
     "ts-loader": "^8.0.12",
