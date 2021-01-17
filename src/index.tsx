@@ -24,13 +24,21 @@ const App: React.FC<{}> = () => {
         <div className="links-container">
           <ul>
             <li>
-              <a className="disabled" href="https://recipes.peetjvv.co.za">
+              <a
+                className="disabled"
+                href="https://recipes.peetjvv.co.za"
+                onClick={e => e.preventDefault()}
+              >
                 <FontAwesomeIcon icon={FaSolidIcons.faHammer} />
                 Open Recipes
               </a>
             </li>
             <li>
-              <a className="disabled" href="https://formula.peetjvv.co.za">
+              <a
+                className="disabled"
+                href="https://formula.peetjvv.co.za"
+                onClick={e => e.preventDefault()}
+              >
                 <FontAwesomeIcon icon={FaSolidIcons.faHammer} />
                 Formula Racing Map
               </a>
@@ -39,6 +47,9 @@ const App: React.FC<{}> = () => {
           <div className="social-links">
             <a href="https://www.github.com/peetjvv">
               <FontAwesomeIcon icon={FaBrandIcons.faGithub} />
+            </a>
+            <a href="https://www.npmjs.com/~peetjvv">
+              <FontAwesomeIcon icon={FaBrandIcons.faNpm} />
             </a>
             <a href="https://www.linkedin.com/in/peetjvv/">
               <FontAwesomeIcon icon={FaBrandIcons.faLinkedin} />
