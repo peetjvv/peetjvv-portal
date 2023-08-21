@@ -19,5 +19,5 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PEETJVV_PORTAL }}'
           projectId: peetjvv-portal
-          target: dutch-blitz-calculator
+          target: peetjvv-portal
           channelId: live
