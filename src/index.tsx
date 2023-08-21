@@ -1,10 +1,9 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as FaBrandIcons from '@fortawesome/free-brands-svg-icons';
 import * as FaSolidIcons from '@fortawesome/free-solid-svg-icons';
 import MeImg from './img/me.jpg';
-import vars from './scss/vars';
 import './scss/main.scss';
 
 const App: React.FC<{}> = () => {
@@ -23,6 +22,11 @@ const App: React.FC<{}> = () => {
         </div>
         <div className="links-container">
           <ul>
+            <li>
+              <a href="https://dutchblitz.peetjvv.co.za">
+                Dutch Blitz Calculator
+              </a>
+            </li>
             <li>
               <a
                 className="disabled"
@@ -48,9 +52,9 @@ const App: React.FC<{}> = () => {
             <a href="https://www.github.com/peetjvv">
               <FontAwesomeIcon icon={FaBrandIcons.faGithub} />
             </a>
-            <a href="https://www.npmjs.com/~peetjvv">
+            {/* <a href="https://www.npmjs.com/~peetjvv">
               <FontAwesomeIcon icon={FaBrandIcons.faNpm} />
-            </a>
+            </a> */}
             <a href="https://www.linkedin.com/in/peetjvv/">
               <FontAwesomeIcon icon={FaBrandIcons.faLinkedin} />
             </a>
@@ -67,4 +71,6 @@ const App: React.FC<{}> = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const container = document.getElementById('app');
+const root = createRoot(container!); // eslint-disable-line @typescript-eslint/no-non-null-assertion
+root.render(<App />);
